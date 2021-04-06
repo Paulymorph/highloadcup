@@ -74,3 +74,8 @@ docker run --name=hlcup2020_task -i -t --rm \
     -v hlcup2020-task:/home/app/var/data \
     <repository>
 ```
+
+## Simpler run
+```bash
+if test -f env.sh; then source env.sh; fi && docker-compose up --build
+```
